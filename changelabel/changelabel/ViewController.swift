@@ -15,10 +15,14 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func buttonclick(_ sender: UIButton) {
+        myLabel.text = "我变成红色了" //加入了改变文字的代码
+        
+        myLabel.textColor = UIColor.red //把标签颜色也改变了 .black .blue 都可以
+        
     }
+   
+    @IBOutlet weak var myLabel: UILabel!
 
 
 }
